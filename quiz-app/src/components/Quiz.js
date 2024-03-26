@@ -11,11 +11,13 @@ function Quiz() {
 
 
   const next = () => {
+    resultScore()
     if (crntQue < QuizData.length-1) {
-      resultScore()
       setCrntQue(crntQue+1)
+      setClickedOption(0)
     } else {
       setResult(true)
+      
     }
   }
 
@@ -36,12 +38,15 @@ function Quiz() {
   return (
     <div className="main">
 
-      {result ? (<>
+      {result ? (
+      <>
+        <h1 id='res'>RESULT</h1>
+
         <div className="result">
-          <p>YOUR SCORE:{score}</p>
-          <p>TOTAL SCORE: {QuizData.length}</p>
+          <p>YOUR SCORE:  {score}</p>
+          <p>TOTAL SCORE:  {QuizData.length}</p>
         </div>
-        <button onClick={tryAgain}>TRY AGAIN</button>
+        <button className='next-btn' onClick={tryAgain}>PLAY AGAIN</button>
 
       </>
 
@@ -66,7 +71,7 @@ function Quiz() {
               })
             }
           </div>
-          <button onClick={next}>NEXT</button>
+          <button className='next-btn' onClick={next}>NEXT</button>
 
         </>
       )

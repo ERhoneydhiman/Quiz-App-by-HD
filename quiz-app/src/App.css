@@ -98,3 +98,16 @@
 #res{
     font-size: 3rem;
 }
+
+
+@media screen and (max-width : 600px) {
+    .main {
+        height: 80vh;
+        width: 100%;
+    }
+    .que{
+        height: 11vh;
+        width: 95%;
+    }
+    
+}

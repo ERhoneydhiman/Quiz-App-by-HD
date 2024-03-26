@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reponame/static/css/main.cb59ecc0.css",
+    "main.js": "/reponame/static/js/main.356182f1.js",
+    "index.html": "/reponame/index.html",
+    "main.cb59ecc0.css.map": "/reponame/static/css/main.cb59ecc0.css.map",
+    "main.356182f1.js.map": "/reponame/static/js/main.356182f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb59ecc0.css",
+    "static/js/main.356182f1.js"
+  ]
+}
